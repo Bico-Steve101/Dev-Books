@@ -1,0 +1,149 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.3">
+  <diagram name="Page-1" id="DVVhyDUInuIRDtUOJlF1">
+    <mxGraphModel dx="5012" dy="1498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-5" parent="1" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" value="COMPLETE DEVOPS PIPELINE - CI/CD + GITOPS    " vertex="1">
+          <mxGeometry height="1830" width="1070" x="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-11" parent="EU7wmL5TsuqfUNciU_l2-5" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" value="GITHUB" vertex="1">
+          <mxGeometry height="350" width="850" x="120" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-29" parent="EU7wmL5TsuqfUNciU_l2-11" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;APP CODE-Repository&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-36" parent="EU7wmL5TsuqfUNciU_l2-29" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;service/&lt;br&gt;&amp;nbsp;.github&lt;/font&gt;&lt;/p&gt;&lt;pre&gt; └─&lt;font style=&quot;font-size: 14px;&quot;&gt;.gitlab-ci.yaml&lt;/font&gt;&lt;/pre&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;src/&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="160" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-43" edge="1" parent="EU7wmL5TsuqfUNciU_l2-11" source="EU7wmL5TsuqfUNciU_l2-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="EU7wmL5TsuqfUNciU_l2-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-30" parent="EU7wmL5TsuqfUNciU_l2-11" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;HELM CHARTS-Repository&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="610" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-40" parent="EU7wmL5TsuqfUNciU_l2-30" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;charts/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;└─ app/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;├─ templates&amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; ├─ Chart.yaml&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;pre&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt; &lt;font face=&quot;Helvetica&quot;&gt;└─ &lt;/font&gt;&lt;font face=&quot;Helvetica&quot;&gt;values&lt;/font&gt;.&lt;font face=&quot;Helvetica&quot;&gt;yaml&lt;/font&gt;&lt;/font&gt;&lt;/pre&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="160" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-41" edge="1" parent="EU7wmL5TsuqfUNciU_l2-11" source="EU7wmL5TsuqfUNciU_l2-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-31" parent="EU7wmL5TsuqfUNciU_l2-11" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;K8S-MANIFESTS-Repository&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="200" width="220" x="310" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-39" parent="EU7wmL5TsuqfUNciU_l2-31" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;base/&lt;br&gt;overlays/&lt;br&gt;kustomization&lt;br&gt;argocd/&lt;br&gt;&lt;/font&gt;&lt;pre&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;└─ &lt;/font&gt;&lt;font face=&quot;Helvetica&quot;&gt;app&lt;/font&gt;.&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;yaml&lt;/font&gt;&lt;/font&gt;&lt;/pre&gt;&lt;font size=&quot;3&quot;&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="110" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-47" parent="EU7wmL5TsuqfUNciU_l2-5" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;CI/CD PIPELINE (Git-Lab CI/Jenkins)&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="270" width="850" x="120" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-74" edge="1" parent="EU7wmL5TsuqfUNciU_l2-47" source="EU7wmL5TsuqfUNciU_l2-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EU7wmL5TsuqfUNciU_l2-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-48" parent="EU7wmL5TsuqfUNciU_l2-47" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;BUILD-Stage&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="160" width="140" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-53" parent="EU7wmL5TsuqfUNciU_l2-48" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;p&gt;1.Docker build&lt;br&gt;2.Image tag (v.1.2.3)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-76" edge="1" parent="EU7wmL5TsuqfUNciU_l2-47" source="EU7wmL5TsuqfUNciU_l2-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EU7wmL5TsuqfUNciU_l2-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-49" parent="EU7wmL5TsuqfUNciU_l2-47" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;SECURITY-Stage&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="160" width="130" x="440" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-72" parent="EU7wmL5TsuqfUNciU_l2-49" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="1.Trivy&lt;br&gt;2.Vuln Scan&lt;br&gt;3.SAST" vertex="1">
+          <mxGeometry height="120" width="80" x="10" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-75" edge="1" parent="EU7wmL5TsuqfUNciU_l2-47" source="EU7wmL5TsuqfUNciU_l2-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EU7wmL5TsuqfUNciU_l2-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-50" parent="EU7wmL5TsuqfUNciU_l2-47" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;TEST-Stage&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="160" width="120" x="250" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-71" parent="EU7wmL5TsuqfUNciU_l2-50" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="1.Unit tests&lt;br&gt;2.Lint&lt;br&gt;3.Integration tests" vertex="1">
+          <mxGeometry height="120" width="100" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-51" parent="EU7wmL5TsuqfUNciU_l2-47" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;PUSH-Stage&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="160" width="120" x="650" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-73" parent="EU7wmL5TsuqfUNciU_l2-51" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="1.Tag Image&lt;br&gt;2.Push to Docker hub&lt;br&gt;3.ECR/GCR" vertex="1">
+          <mxGeometry height="90" width="80" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-82" edge="1" parent="EU7wmL5TsuqfUNciU_l2-5" source="EU7wmL5TsuqfUNciU_l2-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-100" connectable="0" parent="EU7wmL5TsuqfUNciU_l2-82" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1. Code Push/Pull Requests&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3647" y="1" as="geometry">
+            <mxPoint x="-1" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-84" parent="EU7wmL5TsuqfUNciU_l2-5" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;DOCKER REGISTRY-Updated Image Tags&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="240" width="850" x="120" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-91" parent="EU7wmL5TsuqfUNciU_l2-84" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-92" parent="EU7wmL5TsuqfUNciU_l2-84" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-93" parent="EU7wmL5TsuqfUNciU_l2-84" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-94" parent="EU7wmL5TsuqfUNciU_l2-84" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-95" parent="EU7wmL5TsuqfUNciU_l2-84" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="frontend&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:v1.2.3&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:latest" vertex="1">
+          <mxGeometry height="50" width="90" x="95" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-96" parent="EU7wmL5TsuqfUNciU_l2-84" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="backend&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:v1.2.3&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:latest" vertex="1">
+          <mxGeometry height="50" width="90" x="265" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-97" parent="EU7wmL5TsuqfUNciU_l2-84" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="api&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:v1.2.6&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:latest" vertex="1">
+          <mxGeometry height="50" width="90" x="455" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-98" parent="EU7wmL5TsuqfUNciU_l2-84" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="frontend&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:v4.2.3&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;:latest" vertex="1">
+          <mxGeometry height="50" width="90" x="625" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-90" edge="1" parent="EU7wmL5TsuqfUNciU_l2-5" source="EU7wmL5TsuqfUNciU_l2-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-99" connectable="0" parent="EU7wmL5TsuqfUNciU_l2-90" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;pre&gt;2. Image Ready&lt;/pre&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2874" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-101" parent="EU7wmL5TsuqfUNciU_l2-5" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.github;gradientColor=#DFDEDE" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="350" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-112" parent="EU7wmL5TsuqfUNciU_l2-5" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" value="" vertex="1">
+          <mxGeometry height="41" width="50" x="890" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-114" parent="EU7wmL5TsuqfUNciU_l2-5" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;GITOPS WITH ARGOCD&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="500" width="1000" x="40" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-115" parent="EU7wmL5TsuqfUNciU_l2-114" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt;ARGOCD SERVER (Running in K8s) &lt;/pre&gt;" vertex="1">
+          <mxGeometry height="360" width="440" x="80" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-116" parent="EU7wmL5TsuqfUNciU_l2-115" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;pre&gt;&lt;b&gt;Application Definitions in Git:&lt;/b&gt;&lt;/pre&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;/h1&gt;&lt;p&gt;argocd/applications/frontend-app.yaml&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; apiVersion: argoproj.io/apha1&lt;br&gt;&amp;nbsp; kind: Application&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; metadata:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; name: frontend-app&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; spec:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; destination:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; server: https://kubernetes.default.svc&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; source:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; repoURL: https://gitlab.com/yourteam/k8s-manifests.git&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; path: overlays/production&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; syncPolicy:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; automated:&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; selfHeal: true&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; prune: true&amp;nbsp;&amp;nbsp;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="310" width="260" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-117" parent="EU7wmL5TsuqfUNciU_l2-114" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" value="" vertex="1">
+          <mxGeometry height="230" width="240" x="620" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-118" parent="EU7wmL5TsuqfUNciU_l2-114" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ArgoCDWorkflow: &lt;/font&gt;&lt;/h1&gt;&lt;pre&gt;1. Monitors Git repo for &lt;br&gt;manifest changes.&lt;br&gt;2. Detects new image tag in &lt;br&gt;deployment.yaml&lt;br&gt;3. Pulls new image from registry &lt;br&gt;4. Updates K8s deployment with &lt;br&gt;rolling update&lt;br&gt;5. Health checks and &lt;br&gt;auto-rollback if needed&lt;br&gt;&lt;br&gt;&lt;br&gt; &lt;/pre&gt;&lt;p&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="180" width="220" x="630" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="EU7wmL5TsuqfUNciU_l2-113" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="&lt;pre&gt; GIT REPOSITORY STRUCTURE&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="1170" width="1000" y="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
